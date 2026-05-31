@@ -17,7 +17,6 @@
             background-color: #202124 !important; /* 다크모드 배경 고정 */
             font-family: Arial, sans-serif;
             overflow: hidden;
-            
             /* 🛠️ 모바일 터치 시 푸른색 선택 박스 현상 및 꾹 누를 때 팝업창 방지 */
             -webkit-touch-callout: none;
             -webkit-user-select: none;
@@ -164,15 +163,12 @@
     </style>
 </head>
 <body>
-
     <div id="score">Score: 0</div>
     <div id="skill-hud">⚡ SKILL: READY (Shift)</div>
-    
     <div id="game-container">
         <div id="menu-ui">
             <div id="menu-title">KIM3SIU RUNNER</div>
             <div id="menu-subtitle">PC: Space (Jump) / Shift (Dash)<br>Mobile: Touch Left (Dash) / Touch Right (Jump)</div>
-            
             <div class="volume-group">
                 <div class="volume-container">
                     <label for="volume-bgm">🔊 BGM</label>
@@ -185,13 +181,10 @@
                     <span id="volume-sfx-text" class="volume-text">50%</span>
                 </div>
             </div>
-
             <button id="start-button" onclick="startGame()">GAME START</button>
-        </div>
-        
+        </div>  
         <canvas id="gameCanvas" width="800" height="300"></canvas>
     </div>
-    
     <audio id="bgm" src="audio/temp_1780239567828.-1448785110.m4a" loop></audio>
     <audio id="jump-sfx" src="audio/헤이.m4a"></audio>
     <audio id="dash-sfx" src="audio/오빠달린다.m4a"></audio>
